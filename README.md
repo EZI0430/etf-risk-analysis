@@ -1,27 +1,38 @@
-# 0050 ETF 報酬與風險分析
-本專案使用 Python 對台灣元大 0050 ETF 進行歷史報酬率與風險分析，並運用金融指標（年化報酬、波動率、Sharpe Ratio、VaR、最大回撤）評估其風險與報酬特性。
+# 0050ETF報酬與風險分析專案
 
-## 分析項目
-- 資料來源：yfinance 擷取Yahoo Finance台灣0050ETF（0050.TW）
-- 分析項目：
-  - 每日報酬率與累積報酬率計算與視覺化
-  - 年化報酬率與年化波動率
-  - Sharpe Ratio（風險調整報酬）
-  - Value at Risk (VaR) 風險衡量
-  - 最大回撤（Max Drawdown）分析與視覺化
+本專案使用 Python 與 yfinance 抓取台灣 0050 ETF 的歷史股價資料，計算並視覺化以下風險報酬指標：
 
-## 核心成果
-| 指標         | 數值     |
-|-------------|----------|
-| 年化報酬率    | 18.21%   |
-| 年化波動率    | 21.89%   |
-| Sharpe Ratio| 0.79     |
-| VaR(5%)     | -1.995%  |
-| 最大回撤     | -34.86%  |
+## 分析內容
+
+- 日報酬率與累積報酬率
+- 年化報酬率
+- 年化波動率
+- Sharpe Ratio
+- Value at Risk (VaR 5%)
+- 最大回撤（Max Drawdown）
 
 ## 使用工具
+
 - Python
 - Jupyter Notebook
-- 套件：yfinance, numpy, pandas, matplotlib
+- yfinance
+- pandas、numpy、matplotlib
 
+## 專案結果摘要
 
+| 年化報酬率 | 年化波動率 | Sharpe Ratio | VaR(5%) | 最大回撤 |
+|------------|------------|---------------|--------|------------|
+| 18.21%     | 21.89%     | 0.79          | -1.995% | -34.86%    |
+
+## 專案檔案說明
+
+- `01_etf_return_analysis.ipynb`：主程式，含完整分析流程
+- `README.md`：專案介紹（您現在正在看）
+
+## 結論與觀察
+
+0050 ETF 在近年呈現穩定上升趨勢，風險報酬表現中等，最大回撤約為 -34.86%，Sharpe Ratio 為 0.79，投資人仍需留意極端下跌風險。
+
+## 資料來源
+
+- [Yahoo Finance - 0050.TW](https://finance.yahoo.com/quote/0050.TW/)
